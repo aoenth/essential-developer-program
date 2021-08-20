@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61384BD15E0E407106F48C33"
+               BuildableName = "DependencyDiagramAndComposition.app"
+               BlueprintName = "DependencyDiagramAndComposition"
+               ReferencedContainer = "container:DependencyDiagramAndComposition.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61384BD15E0E407106F48C33"
+            BuildableName = "DependencyDiagramAndComposition.app"
+            BlueprintName = "DependencyDiagramAndComposition"
+            ReferencedContainer = "container:DependencyDiagramAndComposition.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
