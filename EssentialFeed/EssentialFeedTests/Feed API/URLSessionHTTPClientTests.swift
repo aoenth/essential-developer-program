@@ -13,6 +13,7 @@ class URLSessionHTTPClient {
 	}
 	
 	func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+        let url = URL(string: "http://wrong-url.com")!
 		session.dataTask(with: url) { _, _, error in
 			if let error = error {
 				completion(.failure(error))
@@ -36,7 +37,8 @@ class URLSessionHTTPClientTests: XCTestCase {
 		sut.get(from: url) { result in
 			switch result {
 			case let .failure(receivedError as NSError):
-				XCTAssertEqual(receivedError, error)
+				XCTAssertEqual(receivedError.domain, error.domain)
+				XCTAssertEqual(receivedError.code, error.code)
 			default:
 				XCTFail("Expected failure with error \(error), got \(result) instead")
 			}
